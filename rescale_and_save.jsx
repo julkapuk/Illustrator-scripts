@@ -61,7 +61,7 @@ for(d=0; d<fileList.length; d++) {
     screen.selected = true;
     doc.fitArtboardToSelectedArt(0);
     
-    var reg = /^\w+/g;
+    var reg = /^[\w-_%]+/g;
     var fileName = (doc.name).match(reg); // utils.js include required
         
     // Make a new directory if needed
